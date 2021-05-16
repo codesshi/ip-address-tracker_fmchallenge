@@ -22,3 +22,9 @@
   margin: 0 auto;
   z-index: 1001;
 }
+
+.App .map-container {
+  height: 70%;
+  box-sizing: border-box;
+  
+}

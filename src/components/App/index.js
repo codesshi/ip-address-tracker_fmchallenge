@@ -1,6 +1,7 @@
 import './App.css';
 import SearchBar from '../SearchBar';
 import IpInfo from '../IpInfo';
+import Map from '../Map';
 import {useState} from 'react';
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
           <IpInfo info={info}/>
         </div>
       </header>
+      <div className="map-container">
+        <Map coord={info.coord}/>
+      </div>
     </div>
   );
 }
