@@ -1,0 +1,24 @@
+.App {
+  height: 100%;
+}
+
+.App header{
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  background: url(../../assets/pattern-bg.png);
+  height: 30%;
+  box-sizing: border-box;
+}
+
+.App h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 2rem 0;
+}
+
+.resultContainer {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1001;
+}
