@@ -4,8 +4,8 @@ dl {
     background: white;
     padding: 2rem;
     width: 100%;
-    max-width: 24rem;
-    margin: 1.5rem auto;
+    max-width: 30rem;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -18,13 +18,65 @@ dt {
 }
 
 dd {
-    margin: 0;
-    margin-top: 0.4rem;
-    color: hsl(0, 0%, 17%);
     font-size: 1.2rem;
     font-weight: 500;
+    color: hsl(0, 0%, 17%);
+    margin: 0;
+    margin-top: 0.4rem;
 }
 
-dd + dt {
+hr + .dataItem {
     margin-top: 1.2rem;
+}
+
+hr {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+
+    dl {
+        display: flex;
+        padding: 2rem 0;
+        max-width: 52rem;
+    }
+    
+    .dataItem {
+        margin: 0;
+        padding: 0 1.8rem;
+        text-align: left;
+        box-sizing: border-box;
+        flex: 1 0 0;
+    }
+
+    hr + .dataItem {
+        margin: 0;
+    }
+
+    hr {
+        display: block;
+        border: 0;
+        border-left: 1px solid hsl(0deg 0% 82%);
+        margin: 0.3rem 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    dl {
+        padding: 2.4rem 0;
+        max-width: 62rem;
+    }
+
+    .dataItem {
+        padding: 0 2.125rem;
+    }
+
+    dt {
+        font-size: 0.75rem;
+    }
+
+    dd {
+        font-size: 1.5rem;
+        margin-top: 0.7rem;
+    }
 }

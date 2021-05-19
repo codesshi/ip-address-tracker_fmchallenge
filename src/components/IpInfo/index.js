@@ -5,14 +5,25 @@ const IpInfo = (props) => {
 
     return (
         <dl>
-            <dt>ip address</dt>
-            <dd>{ip}</dd>
-            <dt>location</dt>
-            <dd>{location}</dd>
-            <dt>timezone</dt>
-            <dd>{timezone}</dd>
-            <dt>isp</dt>
-            <dd>{isp}</dd>
+            <div className="dataItem">
+                <dt>ip address</dt>
+                <dd>{ip}</dd>
+            </div>
+            <hr />
+            <div className="dataItem">
+                <dt>location</dt>
+                <dd>{location}</dd>
+            </div>
+            <hr />
+            <div className="dataItem">
+                <dt>timezone</dt>
+                <dd>{timezone}</dd>
+            </div>
+            <hr />
+            <div className="dataItem">
+                <dt>isp</dt>
+                <dd>{isp}</dd>
+            </div>
         </dl>
     );
 }
