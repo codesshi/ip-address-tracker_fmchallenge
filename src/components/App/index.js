@@ -11,7 +11,7 @@ function App() {
     {
       ip: "192.212.174.101",
       location: "Brooklyn, NY 10001",
-      timezone: "UTC-05:00",
+      timezone: "UTC -05:00",
       isp: "SpaceX Starlink",
       coord: {lat: 0, lng: 0}
     }
@@ -26,7 +26,7 @@ function App() {
           {
             ip: data.ip,
             location: data.location.city,
-            timezone: `UTC${data.location.timezone}`,
+            timezone: `UTC ${data.location.timezone}`,
             isp: data.isp,
             coord: {lat: data.location.lat, lng: data.location.lng}
           }
