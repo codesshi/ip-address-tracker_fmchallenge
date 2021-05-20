@@ -2,7 +2,7 @@ import './App.css';
 import SearchBar from '../SearchBar';
 import IpInfo from '../IpInfo';
 import Map from '../Map';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 function App() {
   const fakeEndpoint = "info.json";
@@ -16,6 +16,14 @@ function App() {
       coord: {lat: 0, lng: 0}
     }
   );
+
+  // set fixed height to avoid viewport resize when displaying virtual keyboard
+  const [height, setHeight] = useState("100%");
+
+  useEffect(() => {
+    const dimesions = document.body.getBoundingClientRect();
+    setHeight(dimesions.height + "px");
+  }, []);
 
   const handleSearch = (str) => {
     fetch(`${fakeEndpoint}?apiKey=${key}&ipAddress=${str}`)
@@ -35,7 +43,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={{height: height}}>
       <header>
         <h1>IP Address Tracker</h1>
         <SearchBar onSearch={handleSearch} />
