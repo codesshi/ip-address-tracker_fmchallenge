@@ -5,8 +5,8 @@ import Map from '../Map';
 import {useState, useEffect} from 'react';
 
 function App() {
-  const fakeEndpoint = "info.json";
-  const key = "1234";
+  const endpoint = process.env.REACT_APP_IPINFO_ENDPOINT_TEST;
+  const key = process.env.REACT_APP_IPINFO_KEY;
   const [info, setInfo] = useState(
     {
       ip: "192.212.174.101",
@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   const handleSearch = (str) => {
-    fetch(`${fakeEndpoint}?apiKey=${key}&ipAddress=${str}`)
+    fetch(`${endpoint}?apiKey=${key}&ipAddress=${str}`)
       .then(response => response.json())
       .then(data => {
         console.log(data);
