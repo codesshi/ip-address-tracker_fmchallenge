@@ -30,9 +30,7 @@ const useMap = (lat, lng, id = "map") => {
     }, []);
 }
 
-const Map = (props) => {
-    const {lat, lng} = props.coord;
-
+const Map = ({coord: {lat, lng}}) => {
     useMap(lat, lng);
 
     return (
