@@ -16,7 +16,7 @@
 
 .resultContainer {
   position: relative;
-  margin: 0 auto;
+  margin-top: 1.5rem;
   z-index: 1001;
 }
 
@@ -24,4 +24,28 @@
   height: 70%;
   box-sizing: border-box;
   
+}
+
+@media screen and (min-width: 900px) {
+  .App header {
+    height: 25%;
+  }
+
+  .App h1 {
+    font-size: 1.6rem;
+  }
+
+  .resultContainer {
+    margin-top: 3rem;
+  }
+
+  .App .map-container {
+    height: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .App h1 {
+    font-size: 1.8rem;
+  }
 }
