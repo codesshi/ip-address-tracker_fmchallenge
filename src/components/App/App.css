@@ -3,6 +3,7 @@
   color: white;
   padding: 1.5rem;
   background: url(../../assets/pattern-bg.png);
+  background-size: cover;
   height: 30%;
   box-sizing: border-box;
 }
