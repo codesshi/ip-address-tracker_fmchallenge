@@ -18,6 +18,7 @@
   position: relative;
   margin-top: 1.5rem;
   z-index: 1001;
+  height: 0;
 }
 
 .App .map-container {

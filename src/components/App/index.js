@@ -1,6 +1,6 @@
 import './App.css';
 import SearchBar from '../SearchBar';
-import IpInfo from '../IpInfo';
+import IpInfoCollapsible from '../IpInfoCollapsible';
 import Map from '../Map';
 import {useState, useEffect} from 'react';
 
@@ -48,7 +48,7 @@ function App() {
         <h1>IP Address Tracker</h1>
         <SearchBar onSearch={handleSearch} />
         <div className="resultContainer">
-          <IpInfo info={info}/>
+          <IpInfoCollapsible info={info}/>
         </div>
       </header>
       <div className="map-container">
