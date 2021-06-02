@@ -30,7 +30,7 @@ const useMap = (lat, lng, id = "map") => {
     }, []);
 }
 
-const Map = ({coord: {lat, lng}}) => {
+const Map = ({coord: {lat, lng} = {lat: 0, lng: 0}}) => {
     useMap(lat, lng);
 
     return (
