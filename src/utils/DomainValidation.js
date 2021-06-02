@@ -1,7 +1,7 @@
 const validate = {
-    hasForbiddenChars: /[^A-Za-z0-9\-]/,
-    hasForbiddenHyphenPosition: /^\-|\-$/,
-    hasAlpha: /[A-Za-z\-]/,
+    hasForbiddenChars: /[^A-Za-z0-9-]/,
+    hasForbiddenHyphenPosition: /^-|-$/,
+    hasAlpha: /[A-Za-z-]/,
     hasUnicodeChars: /[^\x00-\x7f]/
 }
 

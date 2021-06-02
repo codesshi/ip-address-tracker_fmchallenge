@@ -1,5 +1,5 @@
 const validate = {
-    hasNotOnlyDigitAndDot: /[^0-9\.]/,
+    hasNotOnlyDigitAndDot: /[^0-9.]/,
     hasNotOnlyHexAndColon: /[^A-Fa-f0-9:]/,
     startOrEndWithColon: /^:[A-Fa-f0-9]|[A-Fa-f0-9]:$/,
     hasMoreThanOneDoubleColon: /::.*::/,
