@@ -18,10 +18,7 @@ const toAscii = (domain) => {
 }
 
 const lastElement = (array) => {
-    if (Array.isArray(array))
-        return array[array.length - 1];
-
-    throw "[ERR] Passed argument is not an Array";
+    return array[array.length - 1];
 }
 
 const isValidLabel = (label) => {
