@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ip-address-tracker_fmchallenge/static/css/main.adf78437.chunk.css",
+    "main.js": "/ip-address-tracker_fmchallenge/static/js/main.fffe9034.chunk.js",
+    "main.js.map": "/ip-address-tracker_fmchallenge/static/js/main.fffe9034.chunk.js.map",
+    "runtime-main.js": "/ip-address-tracker_fmchallenge/static/js/runtime-main.481a4190.js",
+    "runtime-main.js.map": "/ip-address-tracker_fmchallenge/static/js/runtime-main.481a4190.js.map",
+    "static/js/2.561bc3bf.chunk.js": "/ip-address-tracker_fmchallenge/static/js/2.561bc3bf.chunk.js",
+    "static/js/2.561bc3bf.chunk.js.map": "/ip-address-tracker_fmchallenge/static/js/2.561bc3bf.chunk.js.map",
+    "static/js/3.0a1b33b0.chunk.js": "/ip-address-tracker_fmchallenge/static/js/3.0a1b33b0.chunk.js",
+    "static/js/3.0a1b33b0.chunk.js.map": "/ip-address-tracker_fmchallenge/static/js/3.0a1b33b0.chunk.js.map",
+    "index.html": "/ip-address-tracker_fmchallenge/index.html",
+    "static/css/main.adf78437.chunk.css.map": "/ip-address-tracker_fmchallenge/static/css/main.adf78437.chunk.css.map",
+    "static/js/2.561bc3bf.chunk.js.LICENSE.txt": "/ip-address-tracker_fmchallenge/static/js/2.561bc3bf.chunk.js.LICENSE.txt",
+    "static/media/icon-arrow-black.51bb1080.svg": "/ip-address-tracker_fmchallenge/static/media/icon-arrow-black.51bb1080.svg",
+    "static/media/icon-arrow.2eaaa5ee.svg": "/ip-address-tracker_fmchallenge/static/media/icon-arrow.2eaaa5ee.svg",
+    "static/media/App.css": "/ip-address-tracker_fmchallenge/static/media/pattern-bg.a60a3c85.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.481a4190.js",
+    "static/js/2.561bc3bf.chunk.js",
+    "static/css/main.adf78437.chunk.css",
+    "static/js/main.fffe9034.chunk.js"
+  ]
+}
