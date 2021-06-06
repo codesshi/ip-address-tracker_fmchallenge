@@ -1,6 +1,7 @@
 {
   "name": "ip-address-tracker_fmchallenge",
   "version": "0.1.0",
+  "homepage": "https://codesshi.github.io/ip-address-tracker_fmchallenge/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
@@ -13,6 +14,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
