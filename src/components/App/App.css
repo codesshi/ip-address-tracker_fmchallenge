@@ -14,17 +14,16 @@
   margin: 0 0 2rem 0;
 }
 
-.resultContainer {
+.result-container {
   position: relative;
   margin-top: 1.5rem;
   z-index: 1001;
-  height: 0;
+  pointer-events: none;
 }
 
 .App .map-container {
   height: 70%;
   box-sizing: border-box;
-  
 }
 
 @media screen and (min-width: 900px) {
@@ -36,8 +35,9 @@
     font-size: 1.6rem;
   }
 
-  .resultContainer {
+  .result-container {
     margin-top: 3rem;
+    pointer-events: auto;
   }
 
   .App .map-container {
