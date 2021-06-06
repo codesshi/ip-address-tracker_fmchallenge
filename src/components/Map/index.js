@@ -3,6 +3,7 @@ import L from 'leaflet';
 
 const useMap = (lat, lng, id = "map") => {
     const mapRef = useRef()
+    const key = process.env.REACT_APP_MAPTILER_KEY;
 
     useEffect(() => {
         if (!mapRef.current) {
@@ -13,7 +14,7 @@ const useMap = (lat, lng, id = "map") => {
                     iconAnchor: [23, 56],
                 });
             const marker = L.marker([lat, lng], {icon: customIcon}).addTo(map);
-            L.tileLayer("https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?{token}", {token: "key=v9ZdPTmc692sQ8sJaa1F"}).addTo(map);
+            L.tileLayer("https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?{token}", {token: `key=${key}`}).addTo(map);
 
             mapRef.current = {map, marker}
         }
