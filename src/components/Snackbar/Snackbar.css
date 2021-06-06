@@ -1,0 +1,38 @@
+.snackbar {
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 2rem;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+}
+
+.snackbar .container {
+    padding: 1rem 2rem;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -20%);
+    }
+}
