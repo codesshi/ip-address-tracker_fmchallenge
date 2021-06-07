@@ -17,7 +17,7 @@ const SearchBar = (props) => {
     return (
         <form onSubmit={handleSubmit}>
             <div className={css.container}>
-                <input type="text" value={inputValue} onChange={handleChange} />
+                <input type="text" placeholder="Search for any IP address or domain" value={inputValue} onChange={handleChange} />
                 <button type="submit"><img src={icon}></img></button>
             </div>
         </form>
