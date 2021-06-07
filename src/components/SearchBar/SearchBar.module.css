@@ -19,9 +19,14 @@ form input {
 }
 
 form button {
-    background-color: black;
+    background-color: #1e1e1e;
     width: 3.4rem;
     flex-shrink: 0;
     border: none;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+}
+
+form button:active {
+    background-color: #3f3f3f;
 }
